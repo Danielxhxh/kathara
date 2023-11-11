@@ -1,0 +1,26 @@
+# R2 to R1
+auto eth0
+iface eth0 inet static
+    address 10.0.0.1
+    netmask 255.255.255.254
+    gateway 10.0.0.0
+
+# R2 to R4
+auto eth1
+iface eth1 inet static
+    address 10.0.0.6
+    netmask 255.255.255.254
+    gateway 10.0.0.7
+    
+# R2 to R3
+auto eth2
+iface eth2 inet static
+    address 10.0.0.8
+    netmask 255.255.255.254
+    gateway 10.0.0.9
+
+# DHCP Interface
+auto eth3
+iface eth3 inet static
+    address 151.100.164.1
+    netmask 255.255.255.0
