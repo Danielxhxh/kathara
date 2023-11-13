@@ -3,21 +3,18 @@ auto eth0
 iface eth0 inet static
     address 10.0.0.5
     netmask 255.255.255.254
-    gateway 10.0.0.4
 
 # R4 to R2
 auto eth1
 iface eth1 inet static
     address 10.0.0.7
     netmask 255.255.255.254
-    gateway 10.0.0.6
 
 # R4 to R3
 auto eth2
 iface eth2 inet static
     address 10.0.0.11
     netmask 255.255.255.254
-    gateway 10.0.0.10
 
 # Subnet Interface
 auto eth3
