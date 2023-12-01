@@ -1,0 +1,18 @@
+/etc/init.d/networking restart
+/etc/init.d/ssh restart
+
+# Create user pc1user
+mkdir /home/pc1user
+useradd pc1user -d /home/pc1user
+chown pc1user:pc1user /home/pc1user
+echo -e 'password\npassword\n' | passwd pc1user
+
+# GOAL 1
+# Tunnel from PC1 to S1
+# ssh -p 9000 pc2user@10.0.0.1
+
+# GOAL 2
+# We first connect to the S1 server normally
+# ssh s1user@10.0.0.1
+# Then we connect from the S1 to PC2 using localhost:9000
+# ssh pc2user@localhost -p 9000
