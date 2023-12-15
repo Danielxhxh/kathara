@@ -1,0 +1,19 @@
+python3 /shared/echoserver.py &
+
+# Forward SSH traffic of port 22 to 172.16.0.100:22
+iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 22 -j DNAT --to-destination 172.16.0.100:22
+
+# NAT
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+
+# Accept all packets from eth1 port 22
+iptables -A FORWARD -i eth1 -p tcp --dport 22 -m state --state NEW -j ACCEPT
+
+# Drop every other packet
+iptables -A FORWARD -i eth1 -m state --state NEW -j DROP
+
+
+iptables -A INPUT -d 172.16.0.1 -j DROP
+iptables -A FORWARD -d 192.168.1.0/24 -j DROP
+iptables -A FORWARD -d 10.8.8.8 -j ACCEPT
+iptables -A FORWARD -d 10.0.0.0/8 -j DROP
