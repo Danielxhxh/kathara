@@ -1,0 +1,84 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            22:39:a5:4f:ff:f6:cd:1a:75:0f:b7:65:70:7e:06:81
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=ExamPizza
+        Validity
+            Not Before: Dec 16 16:23:58 2023 GMT
+            Not After : Mar 20 16:23:58 2026 GMT
+        Subject: CN=pc2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:cc:a9:c8:b9:22:39:15:d8:fe:6a:76:cc:2d:0d:
+                    0c:7d:d9:cf:ef:a0:b3:0c:9e:a4:c1:27:db:1f:2d:
+                    fd:b7:76:ac:8c:56:4e:a3:e6:39:c3:87:25:c0:66:
+                    5d:15:14:3d:10:26:5c:b1:20:b4:01:50:dd:11:52:
+                    e0:a8:09:77:8f:37:99:79:2e:4c:d0:cb:dd:5d:8f:
+                    f0:c7:ea:ed:3d:dd:11:92:3a:ff:61:8f:46:75:8d:
+                    46:8b:6a:2b:c7:a1:89:26:40:80:a9:eb:91:a1:e3:
+                    60:48:23:1c:39:b4:75:cf:05:74:c0:4a:fb:1e:27:
+                    e2:3d:44:d7:ed:7c:b9:3e:ed:e4:33:80:f5:77:21:
+                    b6:39:7b:48:a5:57:1b:13:2e:da:27:a7:62:74:1e:
+                    cf:da:fb:30:11:75:ed:38:44:44:9a:20:58:69:38:
+                    b9:3f:56:5a:99:3c:5a:71:12:55:a8:10:6a:2b:71:
+                    ca:b6:a8:23:02:d0:06:ad:1a:c7:de:18:4e:44:b9:
+                    2b:b1:84:4b:8f:7a:e3:42:7a:2d:be:42:49:89:9b:
+                    51:eb:8c:33:cf:1f:03:1e:9d:a8:6f:51:c0:7c:f4:
+                    7b:d4:16:66:1c:f5:25:6f:10:04:e7:78:6c:f0:3a:
+                    f6:3d:c5:12:8c:b5:7e:32:74:0e:55:c1:af:b4:ac:
+                    7a:c9
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                34:9F:C3:0E:69:5E:4E:BB:52:A2:5F:AD:30:D4:01:A7:A0:8C:FD:95
+            X509v3 Authority Key Identifier: 
+                keyid:85:51:84:A7:37:DF:50:EA:1A:CE:B9:44:CE:4B:C3:11:A8:5C:7D:2A
+                DirName:/CN=ExamPizza
+                serial:35:C0:F4:87:EE:3D:09:30:A5:C1:34:E9:13:D2:62:F4:52:E0:48:A2
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        83:ad:29:2b:70:a4:1c:f6:53:1f:34:0c:51:04:01:93:d2:c0:
+        2e:39:e8:c3:85:38:fe:34:5e:27:c7:06:a0:76:ef:9e:64:a3:
+        4f:32:79:cc:c9:97:2b:c4:cf:42:69:bf:cf:07:73:bd:26:07:
+        68:05:18:33:63:0d:28:ab:48:16:d8:5d:6d:49:84:fe:3c:9e:
+        a5:c5:39:3a:2d:f9:48:69:76:06:5a:e2:60:c7:79:38:0c:dc:
+        71:84:b5:3d:7d:f3:23:fa:7b:84:98:a8:a2:68:de:97:64:94:
+        99:93:a6:af:80:e0:f2:44:df:d6:b0:67:14:ae:e7:de:5e:a9:
+        55:81:ba:77:cb:59:43:c6:1d:94:e0:45:5b:61:fd:9d:ec:e3:
+        50:1a:05:39:3f:c9:27:b0:8c:2e:52:6e:64:9a:1c:e9:4e:45:
+        1b:0a:08:87:d5:6e:87:cd:c8:ce:e5:25:a8:27:df:e5:5e:15:
+        79:64:36:09:6a:7d:a3:fa:5d:2a:1f:5b:7d:da:2c:d2:31:65:
+        60:84:3f:26:58:1d:0f:c9:82:40:b6:9a:ca:73:e1:ec:d2:1c:
+        92:c5:65:de:71:a8:11:a5:88:6f:f2:38:b6:32:99:7c:9e:c0:
+        60:20:83:76:ce:09:9c:01:0f:63:68:f8:50:36:a3:0d:fb:e2:
+        fe:8a:a6:b4
+-----BEGIN CERTIFICATE-----
+MIIDTTCCAjWgAwIBAgIQIjmlT//2zRp1D7dlcH4GgTANBgkqhkiG9w0BAQsFADAU
+MRIwEAYDVQQDDAlFeGFtUGl6emEwHhcNMjMxMjE2MTYyMzU4WhcNMjYwMzIwMTYy
+MzU4WjAOMQwwCgYDVQQDDANwYzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQDMqci5IjkV2P5qdswtDQx92c/voLMMnqTBJ9sfLf23dqyMVk6j5jnDhyXA
+Zl0VFD0QJlyxILQBUN0RUuCoCXePN5l5LkzQy91dj/DH6u093RGSOv9hj0Z1jUaL
+aivHoYkmQICp65Gh42BIIxw5tHXPBXTASvseJ+I9RNftfLk+7eQzgPV3IbY5e0il
+VxsTLtonp2J0Hs/a+zARde04RESaIFhpOLk/VlqZPFpxElWoEGorccq2qCMC0Aat
+GsfeGE5EuSuxhEuPeuNCei2+QkmJm1HrjDPPHwMenahvUcB89HvUFmYc9SVvEATn
+eGzwOvY9xRKMtX4ydA5Vwa+0rHrJAgMBAAGjgaAwgZ0wCQYDVR0TBAIwADAdBgNV
+HQ4EFgQUNJ/DDmleTrtSol+tMNQBp6CM/ZUwTwYDVR0jBEgwRoAUhVGEpzffUOoa
+zrlEzkvDEahcfSqhGKQWMBQxEjAQBgNVBAMMCUV4YW1QaXp6YYIUNcD0h+49CTCl
+wTTpE9Ji9FLgSKIwEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMA0G
+CSqGSIb3DQEBCwUAA4IBAQCDrSkrcKQc9lMfNAxRBAGT0sAuOejDhTj+NF4nxwag
+du+eZKNPMnnMyZcrxM9Cab/PB3O9JgdoBRgzYw0oq0gW2F1tSYT+PJ6lxTk6LflI
+aXYGWuJgx3k4DNxxhLU9ffMj+nuEmKiiaN6XZJSZk6avgODyRN/WsGcUrufeXqlV
+gbp3y1lDxh2U4EVbYf2d7ONQGgU5P8knsIwuUm5kmhzpTkUbCgiH1W6HzcjO5SWo
+J9/lXhV5ZDYJan2j+l0qH1t92izSMWVghD8mWB0PyYJAtprKc+Hs0hySxWXecagR
+pYhv8ji2Mpl8nsBgIIN2zgmcAQ9jaPhQNqMN++L+iqa0
+-----END CERTIFICATE-----
