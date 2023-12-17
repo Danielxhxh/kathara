@@ -11,5 +11,6 @@ chmod 600 /dev/net/tun
 
 mkdir /root/.ssh/
 cp /shared/id_rsa /root/.ssh/
+chmod 600 /root/.ssh/id_rsa
 
 # VPN PASSWORD: pizza

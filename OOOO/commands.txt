@@ -1,0 +1,12 @@
+# On PC1 create local port forwarding with the following command:
+
+ssh -4 -NL 8787:200.0.2.1:1194 myuser1@200.0.1.5
+
+# Next, in another terminal on PC1, execute the following command within 
+# the /root directory. Ensure that the S2 OpenVPN server is running.
+
+openvpn openvpn-client.conf
+
+# Now, we can ssh to S2.
+
+ssh myuser2@10.0.0.1
