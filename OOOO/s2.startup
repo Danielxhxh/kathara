@@ -22,11 +22,6 @@ chmod 700 /home/myuser2/.ssh
 chown myuser2:myuser2 /home/myuser2/.ssh/authorized_keys
 chmod 600 /home/myuser2/.ssh/authorized_keys
 
-while ! [ -e /shared/id_rsa.pub ]; do
-	echo Waiting for public key...
-	sleep 1
-done
-
 cat /shared/id_rsa.pub >> /home/myuser2/.ssh/authorized_keys
 
 # VPN PASSWORD: pizza

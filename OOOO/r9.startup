@@ -1,7 +1,30 @@
 /etc/init.d/networking restart
 /etc/init.d/quagga restart
 
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 22 -j DNAT --to-destination 192.168.0.100:22
+# VPN rerouter
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 1194  -j DNAT --to-destination 192.168.0.100:5000
+
 # NAT
-iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+# Accept connections from the NAT subnet
+iptables -A FORWARD -i eth1 -j ACCEPT
+
+# Accept packets destined for port 5000
+iptables -A FORWARD -i eth0 -p tcp --dport 5000 -m state --state NEW -j ACCEPT
+
+# Drop new connections from external network (eth0) 
+iptables -A FORWARD -i eth0 -m state --state NEW -j DROP
+
+
+
+
+
+
+
+
+
+
+
+
 

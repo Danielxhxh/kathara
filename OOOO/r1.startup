@@ -3,3 +3,12 @@
 
 # NAT
 iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+
+# Accept connections from the NAT subnet
+iptables -A FORWARD -i eth0 -j ACCEPT
+
+# Drop new connections from external network (eth1)
+iptables -A FORWARD -i eth1 -m state --state NEW -j DROP
+
+
+

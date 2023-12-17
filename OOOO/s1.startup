@@ -17,11 +17,5 @@ chmod 700 /home/myuser1/.ssh
 chown myuser1:myuser1 /home/myuser1/.ssh/authorized_keys
 chmod 600 /home/myuser1/.ssh/authorized_keys
 
-
-while ! [ -e /shared/id_rsa.pub ]; do
-	echo Waiting for public key...
-	sleep 1
-done
-
 cat /shared/id_rsa.pub >> /home/myuser1/.ssh/authorized_keys
 
