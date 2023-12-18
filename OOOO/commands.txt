@@ -3,7 +3,7 @@
 ssh -4 -NL 8787:200.0.2.1:1194 myuser1@200.0.1.5
 
 # Next, in another terminal on PC1, execute the following command within 
-# the /root directory. Ensure that the S2 OpenVPN server is running.
+# the /root directory. Ensure that the S2 OpenVPN server is running. (Password: pizza)
 
 openvpn openvpn-client.conf
 
